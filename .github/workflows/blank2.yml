@@ -1,7 +1,7 @@
 name: CI
 
 on:
-  pull_request: 
+  merge_group: 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -12,4 +12,4 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run a one-line script
-        run: sleep 120s; echo Hello, world!
+        run:  echo Hello, world!
